@@ -1,0 +1,185 @@
+.logo {
+  position: absolute;
+  width: 135px;
+  height: 85px;
+  left: 2px;
+  top: 3px;
+}
+
+.book {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 50px;
+  background-color: #f39c12;
+  border: 2px solid #d35400;
+  border-radius: 5px;
+  display: flex;
+  padding: 5px;
+}
+
+.page {
+  width: 48%;
+  height: 55%;
+  background-color: #ecf0f1;
+  border: 2px solid #bdc3c7;
+  border-radius: 3px;
+  position: relative;
+  padding: 10px 5px;
+}
+
+.line {
+  height: 1px;
+  background-color: #7f8c8d;
+  margin-top: 1px;
+  margin-bottom: 3px;
+}
+
+.magnifier {
+  font-size: 6em;
+  width: 0.2em;
+  height: 0.2em;
+  margin-bottom: 10px;
+  border: 0.1em solid black;
+  position: absolute;
+  border-radius: 50%;
+  left: 50px;
+  top: 0px;
+}
+
+.magnifier:before {
+  content: "";
+  width: 0.2em;
+  height: 0.06em;
+  position: absolute;
+  right: -0.2em;
+  bottom: -0.1em;
+  background: black;
+  transform: rotate(45deg);
+}
+
+.image_background {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: url(../images/SPbPU.jpg) 0px 0px no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.image_background:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+header {
+  font-size: 6rem;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 80px;
+}
+
+main {
+  color: white;
+  font-size: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+  margin-bottom: 0;
+  height: 50px;
+  color: white;
+  text-align: center;
+  font-size: large;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.8);
+  height: 70px;
+}
+
+ul {
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+  font-size: large;
+}
+
+.menu_a {
+  text-decoration: none;
+  background: rgba(255, 255, 255, 1);
+  color: black;
+  padding: 0px 15px;
+  font-family: arial;
+  line-height: 68px;
+  width: 100px;
+  display: block;
+  border-left: 1px solid black;
+  transition: all 0.5s ease;
+}
+
+a:hover {
+  background: #babbe7;
+}
+
+li {
+  float: right;
+  position: relative;
+}
+
+li>ul {
+  position: absolute;
+  top: 70px;
+  display: none;
+
+}
+li>ul>li {
+  border-bottom: 1px solid black;
+
+}
+
+li:hover>ul {
+  display: block;
+  width: 250px;
+}
+
+li:hover>ul>li {
+  float: none;
+}

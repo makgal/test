@@ -1,0 +1,32 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.score_message {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: larger;
+    white-space: pre;
+    margin-top: 10px;
+}
+
+#score_table {
+    border-collapse: collapse;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#score_table th,
+#score_table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#score_table th {
+    background-color: #808080;
+    font-weight: bold;
+}

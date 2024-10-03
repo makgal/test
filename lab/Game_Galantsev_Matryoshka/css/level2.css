@@ -1,0 +1,86 @@
+main {
+    margin-top: 100px;
+    min-height: calc(100vh - 90px);
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.matryoshka-container {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border: 2px solid #ccc;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#main_matryoshka {
+    margin-bottom: 50px;
+}
+
+#wrong_matryoshkas {
+    margin-right: 50px;
+}
+
+#matryoshkas {
+    margin: 0 50px;
+}
+
+#correct_matryoshkas {
+    margin-left: 50px;
+}
+
+#timer,
+#taskText {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+.matryoshka {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+}
+
+.matryoshka-name {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+@keyframes jump {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+
+    50% {
+        transform: translate(-50%, -60%);
+    }
+
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+.jump {
+    animation: jump 0.5s ease;
+}

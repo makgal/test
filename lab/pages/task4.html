@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="../css/main.css" rel="stylesheet" />
+    <link href="../css/task4.css" rel="stylesheet" />
+    <title>Задание 4</title>
+</head>
+
+<body>
+    <div class="image_background"></div>
+
+    <div class="menu">
+        <ul>
+       
+            <li>
+                <a class="menu_a">Задания ↓</a>
+                <ul>
+                    <li><a class="menu_a" href="task1.html">Задание 1</a></li>
+                    <li><a class="menu_a" href="task2.html">Задание 2</a></li>
+                    <li><a class="menu_a" href="task3.html">Задание 3</a></li>
+                    <li><a class="menu_a" href="">Задание 4</a></li>
+                    <li><a class="menu_a" href="task5.html">Задание 5</a></li>
+                </ul>
+            </li>
+            <li><a class="menu_a" href="../Game_Galantsev_Matryoshka/index.html">Курсовая</a></li>
+            <li><a class="menu_a" href="../index.html">Главная</a></li>
+        </ul>
+        <div class="logo">
+            <div class="book">
+                <div class="page">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <div class="page">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="magnifier"></div>
+        </div>
+    </div>
+
+    <header>
+        Задание 4
+    </header>
+
+    <main>
+        <p>
+        <h2>Задание:</h2>
+        Существует 2 массива: латинских высказываний и их переводов.<br>
+        Создайте два класса class1 и class2. В них задайте два разных цвета фона. При каждом четном нажатии на кнопку выводится фраза с применением класса class1, при нечетном class2.<br>
+        Фразы выводятся в случайном, не повторяющемся порядке. Когда фразы заканчиваются, то выводится alert с фразой "Фразы закончились".<br>
+        По нажатию на кнопку "Перекрасить" у всех четных строк изменяется начертание на полужирное.<br>
+        На странице в части content создать тег &lt;div id='rand'&gt;.<br>
+        По нажатию на кнопку "Создать" в этом тэге создается тег &lt;p&gt;. Каждый, вновь созданный элемент, имеет
+        свой нумерованный id. Номер фразы выводится подчеркнутым, латинский - курсив, русский - обычный.
+
+        </p>
+        <p>
+        <h2>Решение:</h2>
+        <div id="content">
+            <button id="generateButton">Создать</button>
+            <button id="recolorButton">Перекрасить</button>
+            <div id="rand"></div>
+        </div>
+        </p>
+    </main>
+    <footer>
+        © 2024 Образовательный портал. Все права защищены.
+    </footer>
+    <script src="../js/task4.js"></script>
+</body>
+
+</html>

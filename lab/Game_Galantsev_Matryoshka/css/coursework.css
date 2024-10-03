@@ -1,0 +1,69 @@
+form {
+    text-align: center;
+}
+
+#welcome_phrase {
+    text-align: center;
+}
+
+#welcome_message_menu {
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+
+input {
+    padding: 10px;
+    width: 300px;
+    height: 30px;
+    font-size: large;
+}
+
+.btn {
+    text-decoration: none;
+    margin: 10px;
+    background: #5eae61;
+    color: white;
+    padding: 15px;
+    font-family: arial;
+    width: 200px;
+    font-size: large;
+    border: solid 1px #529e55;
+    transition: all 0.5s ease;
+    text-align: center;
+}
+
+.start_button {
+    text-decoration: none;
+    background: #5eae61;
+    color: white;
+    border: solid 1px #529e55;
+    transition: all 0.5s ease;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.btn:hover {
+    background-color: #45a040;
+}
+
+.matryoshka img.small {
+    height: 50px;
+    width: auto;
+}
+
+.matryoshka img.medium {
+    height: 100px;
+    width: auto;
+}
+
+.matryoshka img.large {
+    height: 150px;
+    width: auto;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
